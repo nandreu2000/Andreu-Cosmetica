@@ -24,7 +24,6 @@
 
 .cabeceraBk {
   height: 100vh;
-  width: 100vw;
   background-image: url(../img/Hero-Section.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -110,42 +109,94 @@
  /***** PRODUCTOS DESTACADOS *****/
 
 .destacados {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  text-align: center;
 }
-
-.tituloProductosDest {
-  color: var(--color-principal);
+.prod-dest >div >h2, h3 {
   font-family: var(--fuente-principal);
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: -10px;
 }
 
-.card-title-a {
-  color: rgb(255, 71, 126);
+.prod-dest >div >h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+.prod-dest >div >h3 {
+  font-size: 32px;
+  line-height: 2rem;
+  color: var(--color-principal);
+  margin: 20px;
 }
 
-.card-title-b {
-  color: rgb(181, 71, 255);
+.prod-dest{
+  align-items: center;
+  margin-top: 150px;
 }
 
-.btn-primary {
+.destacadoMes{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.producto1{
+  margin-bottom: 45px;
+}
+
+.producto__titulo--color1 >h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(247, 114, 154, 0.8);
+  padding: 5px 0;
+}
+
+.producto__titulo--color2 >h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(154, 102, 189, 0.8);
+  padding: 5px 0;
+}
+
+.producto__descripcion >p{
+  text-align: justify;
+}
+
+.producto-button {
+  padding: 8px;
   background-color: var(--color-principal);
-  border: none;
-}
-.btn-primary:hover {
-  background-color: rgb(248, 71, 39);
+  margin-top: 25px;
 }
 
-.imagenesDestacadas:hover {
-  transform: scale(1.1);
+.producto-button:hover {
+  border: 2px solid rgb(235, 45, 12);
+  transform: scale(1.05);
+  transition: 0.15s ease;
+}
+
+.producto-button > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
 }
 
 @media (min-width: 768px) {
-  .destacados {
-    margin-top: 200px;
-    margin-bottom: 80px;
+  .destacadoMes{
+      flex-direction: row;
+      gap: 2rem;
+  }
+  .producto__descripcion >p{
+      width: 350px;
+      min-height: 200px;
+      text-align: justify;
+  }
+}
+
+@media (min-width: 1440px) {
+  .producto__descripcion >p{
+      width: 450px;
+      min-height: 220px;
+      text-align: justify;
   }
 }
 
