@@ -240,9 +240,60 @@ footer {
 /***** RESTO DE PAGINAS (esto se cambiara cuando se apliquen los estilos definitivos a las paginas correspondientes) *****/
 
 .margenesPagina {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  /* margin-bottom: 100px; */
+  /* display: flex;
+  flex-direction: column; */
+  
 }
+
+/***** PAGINA NOSOTROS *****/
+
+/* .nosotros__texto {
+  display: flex;
+  width: 950px;
+  margin: 350px auto;
+  text-align: justify;
+  
+} */
+
+.nosotros__texto {
+  margin: 400px auto 40px;
+  width: auto;
+  text-align: justify;
+}
+
+.imgNos {
+  height: 300px;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgNos >img {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .nosotros__texto {
+    margin: 400px auto 40px;
+    width: 750px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nosotros__texto {
+    margin: 400px auto 40px;
+    width: 950px;
+    text-align: justify;
+  }
+}
+
 
 
 /***** PAGINA CONTACTO *****/
@@ -263,9 +314,7 @@ footer {
   margin-top: 8rem;
   font-family: var(--fuente-principal);
 }
-.tituloForm {
-  
-}
+
 .contenedorForm {
   margin-top: 3rem;
   padding: 2rem 2rem 0;
