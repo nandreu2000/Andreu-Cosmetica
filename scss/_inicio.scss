@@ -29,7 +29,6 @@
   background-attachment: fixed;
   margin-top: 0;
 }
-
 .cabeceraContenido {
   display: flex;
 
@@ -43,7 +42,6 @@
       font-family: $fuente-principal;
       font-size: 2rem;
     }
-
     .parrafoCabecera {
       font-style: italic;
       font-size: 0.85rem;
@@ -52,6 +50,7 @@
     }
   }
 }
+
 
 @media (min-width: 768px) {
   .textosCabecera {

@@ -1,7 +1,245 @@
 
 @import "./variables";
-@import "./inicio";
+//@import "./inicio";
 @import "./nosotros";
 @import "./productos";
 @import "./contacto";
 @import "./error";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $color-nav;
+  font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: $color-nav;
+  font-weight: 400;
+}
+
+ /***** CABECERA *****/
+
+.cabeceraBk {
+  height: 100vh;
+  background-image: url(../img/Hero-Section.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0;
+  
+}
+
+.cabeceraContenido {
+  display: flex;
+}
+
+.textosCabecera {
+  margin-top: 170px;
+  margin-left: 45px;
+  width: 300px; ;
+  padding: 25px;
+}
+
+.tituloCabecera {
+  font-family: $fuente-principal;
+  font-size: 2rem;   
+}
+
+.parrafoCabecera {
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  color: #353535;
+}
+
+@media (min-width: 768px) {
+  .textosCabecera {
+    margin-top: 230px;
+    margin-left: 75px;
+    width: 480px; ;
+    padding: 25px;
+  }
+  .tituloCabecera {
+    font-size: 2rem;   
+  }
+  .parrafoCabecera {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textosCabecera {
+    margin-top: 250px;
+    margin-left: 75px;
+    width: 580px; ;
+    padding: 25px;
+  }
+  .tituloCabecera {
+    font-size: 2.3rem;   
+  }
+  .parrafoCabecera {
+    font-size: 1rem;
+    line-height: 1.5;
+    
+  }
+}
+
+@media (min-width: 1440px) {
+  .textosCabecera {
+    margin-top: 300px;
+    margin-left: 75px;
+    width: 880px; ;
+    padding: 25px;
+  }
+  .tituloCabecera {
+    font-size: 4rem;   
+  }
+  .parrafoCabecera {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+  }
+}
+
+ /***** PRODUCTOS DESTACADOS *****/
+
+.destacados {
+  text-align: center;
+}
+.prod-dest >div >h2, h3 {
+  font-family: $fuente-principal;
+}
+
+.prod-dest >div >h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+.prod-dest >div >h3 {
+  font-size: 32px;
+  line-height: 2rem;
+  color: $color-principal;
+  margin: 20px;
+}
+
+.prod-dest{
+  align-items: center;
+  margin-top: 150px;
+}
+
+.destacadoMes{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.producto1{
+  margin-bottom: 45px;
+}
+
+.producto__titulo--color1 >h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(247, 114, 154, 0.8);
+  padding: 5px 0;
+}
+
+.producto__titulo--color2 >h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(154, 102, 189, 0.8);
+  padding: 5px 0;
+}
+
+.producto__descripcion >p{
+  text-align: justify;
+}
+
+.producto-button {
+  padding: 8px;
+  background-color: $color-principal;
+  margin-top: 25px;
+  color: white;
+}
+
+.producto-button:hover {
+  border: 2px solid rgb(235, 45, 12);
+  transform: scale(1.05);
+  transition: 0.15s ease;
+  color: white;
+}
+
+.producto-button > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .destacadoMes{
+      flex-direction: row;
+      gap: 2rem;
+  }
+  .producto__descripcion >p{
+      width: 350px;
+      min-height: 200px;
+      text-align: justify;
+  }
+}
+
+@media (min-width: 1440px) {
+  .producto__descripcion >p{
+      width: 450px;
+      min-height: 220px;
+      text-align: justify;
+  }
+}
+
+/***** RESEÑAS *****/
+
+.resenas {
+  margin: 0;
+  padding: 30px;
+  background-color: $color-principal;
+}
+
+@media (min-width: 768px) {
+  .resenas {
+    height: 900px;
+  }
+  .div {
+    margin-top: 175px;
+  }
+}
+
+/***** FOOTER *****/
+
+footer {
+  height: 200px;
+}
+
+.fa-facebook-square {
+  color: white;
+  margin: 15px;
+}
+.fa-instagram {
+  color: white;
+  margin: 15px;
+}
+.fa-twitter-square {
+  color: white;
+  margin: 15px;
+}
+
+

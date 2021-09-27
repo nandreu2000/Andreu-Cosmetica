@@ -1,258 +1,4 @@
 @charset "UTF-8";
-/***** INICIO *****/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #f97704;
-  font-weight: 400;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #f97704;
-  font-weight: 400;
-}
-
-/***** CABECERA *****/
-.cabeceraBk {
-  height: 100vh;
-  background-image: url(../img/Hero-Section.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: 0;
-}
-
-.cabeceraContenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.cabeceraContenido .textosCabecera {
-  margin-top: 170px;
-  margin-left: 45px;
-  width: 300px;
-  padding: 25px;
-}
-
-.cabeceraContenido .textosCabecera .tituloCabecera {
-  font-family: "Prata", serif;
-  font-size: 2rem;
-}
-
-.cabeceraContenido .textosCabecera .parrafoCabecera {
-  font-style: italic;
-  font-size: 0.85rem;
-  line-height: 1.5rem;
-  color: #353535;
-}
-
-@media (min-width: 768px) {
-  .textosCabecera {
-    margin-top: 230px;
-    margin-left: 75px;
-    width: 480px;
-    padding: 25px;
-  }
-  .textosCabecera .tituloCabecera {
-    font-size: 2rem;
-  }
-  .textosCabecera .parrafoCabecera {
-    font-size: 0.85rem;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width: 1024px) {
-  .textosCabecera {
-    margin-top: 250px;
-    margin-left: 75px;
-    width: 580px;
-    padding: 25px;
-  }
-  .textosCabecera .tituloCabecera {
-    font-size: 2.3rem;
-  }
-  .textosCabecera .parrafoCabecera {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-@media (min-width: 1440px) {
-  .textosCabecera {
-    margin-top: 300px;
-    margin-left: 75px;
-    width: 880px;
-    padding: 25px;
-  }
-  .textosCabecera .tituloCabecera {
-    font-size: 4rem;
-  }
-  .textosCabecera .parrafoCabecera {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-}
-
-/***** PRODUCTOS DESTACADOS *****/
-.destacados {
-  text-align: center;
-}
-
-.prod-dest > div > h2,
-h3 {
-  font-family: "Prata", serif;
-}
-
-.prod-dest > div > h2 {
-  font-size: 52px;
-  margin-bottom: 20px;
-}
-
-.prod-dest > div > h3 {
-  font-size: 32px;
-  line-height: 2rem;
-  color: tomato;
-  margin: 20px;
-}
-
-.prod-dest {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 150px;
-}
-
-.destacadoMes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 2rem;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 150px;
-}
-
-.producto1 {
-  margin-bottom: 45px;
-}
-
-.producto__titulo--color1 > h2 {
-  font-size: 24px;
-  color: white;
-  background-color: rgba(247, 114, 154, 0.8);
-  padding: 5px 0;
-}
-
-.producto__titulo--color2 > h2 {
-  font-size: 24px;
-  color: white;
-  background-color: rgba(154, 102, 189, 0.8);
-  padding: 5px 0;
-}
-
-.producto__descripcion > p {
-  text-align: justify;
-}
-
-.producto-button {
-  padding: 8px;
-  background-color: tomato;
-  margin-top: 25px;
-  color: white;
-}
-
-.producto-button:hover {
-  border: 2px solid #eb2d0c;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 0.15s ease;
-  transition: 0.15s ease;
-  color: white;
-}
-
-.producto-button > a {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  .destacadoMes {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 2rem;
-  }
-  .producto__descripcion > p {
-    width: 350px;
-    min-height: 200px;
-    text-align: justify;
-  }
-}
-
-@media (min-width: 1440px) {
-  .producto__descripcion > p {
-    width: 450px;
-    min-height: 220px;
-    text-align: justify;
-  }
-}
-
-/***** RESEÑAS *****/
-.resenas {
-  margin: 0;
-  padding: 30px;
-  background-color: tomato;
-}
-
-@media (min-width: 768px) {
-  .resenas {
-    height: 900px;
-  }
-  .div {
-    margin-top: 175px;
-  }
-}
-
-/***** FOOTER *****/
-footer {
-  height: 200px;
-}
-
-.fa-facebook-square {
-  color: white;
-  margin: 15px;
-}
-
-.fa-instagram {
-  color: white;
-  margin: 15px;
-}
-
-.fa-twitter-square {
-  color: white;
-  margin: 15px;
-}
-
 /***** PAGINA NOSOTROS *****/
 .margenesPagina {
   margin-top: 150px;
@@ -325,7 +71,7 @@ footer {
 }
 
 .contenedorProductos .cajasProd {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
@@ -508,4 +254,256 @@ input[type="number"] {
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f97704;
+  font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #f97704;
+  font-weight: 400;
+}
+
+/***** CABECERA *****/
+.cabeceraBk {
+  height: 100vh;
+  background-image: url(../img/Hero-Section.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0;
+}
+
+.cabeceraContenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.textosCabecera {
+  margin-top: 170px;
+  margin-left: 45px;
+  width: 300px;
+  padding: 25px;
+}
+
+.tituloCabecera {
+  font-family: "Prata", serif;
+  font-size: 2rem;
+}
+
+.parrafoCabecera {
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  color: #353535;
+}
+
+@media (min-width: 768px) {
+  .textosCabecera {
+    margin-top: 230px;
+    margin-left: 75px;
+    width: 480px;
+    padding: 25px;
+  }
+  .tituloCabecera {
+    font-size: 2rem;
+  }
+  .parrafoCabecera {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textosCabecera {
+    margin-top: 250px;
+    margin-left: 75px;
+    width: 580px;
+    padding: 25px;
+  }
+  .tituloCabecera {
+    font-size: 2.3rem;
+  }
+  .parrafoCabecera {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1440px) {
+  .textosCabecera {
+    margin-top: 300px;
+    margin-left: 75px;
+    width: 880px;
+    padding: 25px;
+  }
+  .tituloCabecera {
+    font-size: 4rem;
+  }
+  .parrafoCabecera {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+/***** PRODUCTOS DESTACADOS *****/
+.destacados {
+  text-align: center;
+}
+
+.prod-dest > div > h2, h3 {
+  font-family: "Prata", serif;
+}
+
+.prod-dest > div > h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.prod-dest > div > h3 {
+  font-size: 32px;
+  line-height: 2rem;
+  color: tomato;
+  margin: 20px;
+}
+
+.prod-dest {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+}
+
+.destacadoMes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 150px;
+}
+
+.producto1 {
+  margin-bottom: 45px;
+}
+
+.producto__titulo--color1 > h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(247, 114, 154, 0.8);
+  padding: 5px 0;
+}
+
+.producto__titulo--color2 > h2 {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(154, 102, 189, 0.8);
+  padding: 5px 0;
+}
+
+.producto__descripcion > p {
+  text-align: justify;
+}
+
+.producto-button {
+  padding: 8px;
+  background-color: tomato;
+  margin-top: 25px;
+  color: white;
+}
+
+.producto-button:hover {
+  border: 2px solid #eb2d0c;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+  color: white;
+}
+
+.producto-button > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .destacadoMes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+  .producto__descripcion > p {
+    width: 350px;
+    min-height: 200px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1440px) {
+  .producto__descripcion > p {
+    width: 450px;
+    min-height: 220px;
+    text-align: justify;
+  }
+}
+
+/***** RESEÑAS *****/
+.resenas {
+  margin: 0;
+  padding: 30px;
+  background-color: tomato;
+}
+
+@media (min-width: 768px) {
+  .resenas {
+    height: 900px;
+  }
+  .div {
+    margin-top: 175px;
+  }
+}
+
+/***** FOOTER *****/
+footer {
+  height: 200px;
+}
+
+.fa-facebook-square {
+  color: white;
+  margin: 15px;
+}
+
+.fa-instagram {
+  color: white;
+  margin: 15px;
+}
+
+.fa-twitter-square {
+  color: white;
+  margin: 15px;
 }
