@@ -1,0 +1,55 @@
+/***** CONTACTO *****/
+
+
+.fondoBody {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/924/906/non_2x/minimal-scene-with-geometrical-forms-cylinder-podium-in-pink-background-scene-to-show-cosmetic-product-showcase-shopfront-display-case-3d-illustration-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tituloForm {
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 8rem;
+    font-family: $fuente-principal;
+  }
+  
+  .contenedorForm {
+    margin-top: 3rem;
+    padding: 2rem 2rem 0;
+    background-color: #0003;
+    margin-bottom: 4rem;
+    border: 2px solid #f2f2f26b;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .fondoCampo {
+    background-color: rgba(252, 228, 245, 0.603);
+  }
+  
+  .fondoCampo:active {
+    background-color: rgba(252, 228, 245, 0.603);
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  @media (min-width: 768px) {
+    .contenedorForm {
+      width: 650px;
+      border-radius: 1rem;
+    }
+  }
+  
+  .cardParrafo{
+    text-align: justify;
+  }

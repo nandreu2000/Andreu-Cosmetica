@@ -1,0 +1,66 @@
+/***** PAGINA PRODUCTOS *****/
+
+.tituloProductos {
+    text-align: center;
+    margin-top: 165px;
+    color: $color-principal;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #00000071;
+    margin-top: 8rem;
+    font-family: $fuente-principal;
+  }
+  .contenedorProductos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    margin-bottom: 50px;
+
+    .Descrip_Crema {
+        font-size: 14px;
+        text-align: justify;
+        padding: 15px;
+      }
+      
+      .cajasProd {
+        margin-bottom: 50px;
+      }
+  }
+  
+  
+  @media (min-width: 768px) {
+  
+    .contenedorProductos {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 75px;
+        margin-bottom: 150px;
+
+        .containerP {
+            text-align: center;
+            display: grid;
+            width: 750px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem ;
+        }
+      
+        .Titulo_Prod {
+          height: 60px;
+        }
+      
+        .Descrip_Crema {
+            height: 295px;
+            overflow: hidden;
+            
+        }
+      
+        .Img_Prod {
+            height: 400px;
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+    
+  }
+  
