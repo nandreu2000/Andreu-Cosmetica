@@ -2,12 +2,12 @@
 
 .tituloProductos {
     text-align: center;
-    margin-top: 165px;
     color: $color-principal;
     font-weight: 700;
     text-shadow: 2px 2px 4px #00000071;
     margin-top: 8rem;
     font-family: $fuente-principal;
+    margin-bottom: 25px;
   }
   .contenedorProductos {
     display: flex;
@@ -24,6 +24,8 @@
       
       .cajasProd {
         margin-bottom: 25px;
+        padding: 0 10px;
+
       }
   }
   
@@ -50,7 +52,7 @@
         }
       
         .Descrip_Crema {
-            height: 295px;
+            height: 310px;
             overflow: hidden;
             
         }
