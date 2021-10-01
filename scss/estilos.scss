@@ -3,6 +3,7 @@
 //@import "./inicio";
 @import "./nosotros";
 @import "./productos";
+@import "./consejos";
 @import "./contacto";
 @import "./error";
 
@@ -151,7 +152,7 @@
 .producto__titulo--color1 >h2 {
   font-size: 24px;
   color: white;
-  background-color: #9ac3db;
+  background-color: rgba(247, 114, 154, 0.8);
   padding: 5px 0;
 }
 
@@ -174,7 +175,7 @@
 }
 
 .producto-button:hover {
-  border: 2px solid rgb(235, 45, 12);
+  border: 2px solid $color-secundario;
   transform: scale(1.05);
   transition: 0.15s ease;
   color: white;

@@ -2,5 +2,12 @@
 //VARIABLES 
 
 $fuente-principal: 'Prata', serif;
-$color-principal: tomato;
+$fuente-secundaria: 'quentin', serif;
+$color-principal: #b9886a;
+$color-secundario: #956447;
 $color-nav: #f97704;
+
+@font-face {
+    font-family: quentin;
+    src: url(../font/Quentin.otf);
+}
