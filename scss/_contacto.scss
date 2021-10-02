@@ -1,19 +1,20 @@
 /***** CONTACTO *****/
 
 
-.fondoBody {
-    background-image: url(https://static.vecteezy.com/system/resources/previews/002/924/906/non_2x/minimal-scene-with-geometrical-forms-cylinder-podium-in-pink-background-scene-to-show-cosmetic-product-showcase-shopfront-display-case-3d-illustration-free-vector.jpg);
+.contactobody {
+    background-image: url(../img/fondo-contacto.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   
   .tituloForm {
-    color: white;
+    color: black;
     font-weight: 700;
-    text-shadow: 2px 2px 4px #000000;
+    /* text-shadow: 2px 2px 4px #000000; */
     margin-top: 8rem;
     font-family: $fuente-principal;
   }
