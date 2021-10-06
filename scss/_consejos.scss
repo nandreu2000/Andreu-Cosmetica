@@ -1,5 +1,8 @@
 /***** PAGINA CONSEJOS *****/
 
+h2 {
+    font-family: $fuente-principal;
+}
 .accordion-button:not(.collapsed){
     color: $color-principal;
     background-color: #fff3e7;

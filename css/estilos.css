@@ -177,6 +177,10 @@
 }
 
 /***** PAGINA CONSEJOS *****/
+h2 {
+  font-family: "Prata", serif;
+}
+
 .accordion-button:not(.collapsed) {
   color: #b9886a;
   background-color: #fff3e7;
