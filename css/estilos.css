@@ -105,6 +105,10 @@
 }
 
 /***** PAGINA PRODUCTOS *****/
+h2 {
+  font-family: "Prata", serif;
+}
+
 .tituloProductos {
   text-align: center;
   color: #000;
