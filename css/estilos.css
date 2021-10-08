@@ -9,7 +9,7 @@
   margin-top: 125px;
 }
 
-.fff {
+.contenedorNodotros__general {
   padding: 10px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 768px) {
-  .fff {
+  .contenedorNodotros__general {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -64,7 +64,7 @@
 }
 
 @media (min-width: 1024px) {
-  .fff {
+  .contenedorNodotros__general {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
